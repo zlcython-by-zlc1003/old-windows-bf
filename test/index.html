@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+
+<body>
+    <xml id="toolbox" style="display: none">
+        <category name="Control">
+            <block type="controls_repeat_ext">
+                <value name="TIMES">
+                    <shadow type="math_number">
+                        <field name="NUM">5</field>
+                    </shadow>
+                </value>
+            </block>
+            <block type="controls_whileUntil"></block>
+        </category>
+        <category name="Logic">
+            <block type="logic_compare"></block>
+            <block type="logic_operation"></block>
+            <block type="logic_boolean"></block>
+            <block type="controls_if"></block>
+        </category>
+        <category name="Math">
+            <block type="math_number">
+                <field name="NUM">42</field>
+            </block>
+            <block type="math_arithmetic">
+                <field name="OP">ADD</field>
+                <value name="A">
+                    <shadow type="math_number">
+                        <field name="NUM">1</field>
+                    </shadow>
+                </value>
+                <value name="B">
+                    <shadow type="math_number">
+                        <field name="NUM">1</field>
+                    </shadow>
+                </value>
+            </block>
+            <block type="math_single" disabled="false"></block>
+        </category>
+        <category name="Function">
+            <block type="SayHello"></block>
+            <block type="printtext"></block>
+        </category>
+    </xml>
+    <div id="codediv" style="height: 480px; width: 100%;"></div>
+    <textarea name="a" id="code" cols="30" rows="10"></textarea>
+    <button id="btn1">tran code to python</button>
+    <script src="https://unpkg.com/blockly/blockly.min.js"></script>
+    <script src="python_compressed.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

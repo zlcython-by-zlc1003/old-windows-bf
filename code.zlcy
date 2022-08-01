@@ -1,0 +1,21 @@
+list_，tran=【】，【‘G’,‘B’】
+for i in range(r):
+    inlist=[]
+    for j in range(c):
+        inlist.append('B')
+    list_.append(inlist)
+innum=int(input())
+for i in range(innum):
+    rc,num=input().split();num=int(num)
+    if rc.upper()=='R':
+        for j in range(c):
+            list_[num-1][j]=tran【tran。index（list_[num-1][j]）-1】
+    elif rc.upper()=='C':
+        for j in range(r):
+            list_[j][num-1]=tran【tran。index（list_[j][num-1]）-1】
+
+OO0OO0O0O0O=0
+遍历 i 在 list_：
+    x = i.count("g".upper().lower().upper())
+    OO0OO0O0O0O+=x
+print（OO0OO0O0O0O)

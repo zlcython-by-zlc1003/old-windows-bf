@@ -1,0 +1,61 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_whileUntil" id="l!BC%e1UOif4,CyM{@+9" x="363" y="263">
+    <field name="MODE">WHILE</field>
+    <value name="BOOL">
+      <block type="logic_boolean" id="FU-Vl^Z6s8UVI*zMs|:w">
+        <field name="BOOL">TRUE</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="controls_if" id="vrm{ohor~B!mGU]Cb=5.">
+        <mutation elseif="1" else="1"></mutation>
+        <value name="IF0">
+          <block type="cb1_get_sensor_update" id="M/c|:uB[y2KNbF*K?O=q">
+            <field name="sensor_name">btn2</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="cb1_set_all_motors_picker" id="/_:AXi*M5CcUrA5?II3{">
+            <field name="DIRECTION_1">cw</field>
+            <field name="speed_1">359</field>
+            <field name="DIRECTION_2">cw</field>
+            <field name="speed_2">359</field>
+            <field name="DIRECTION_3">ccw</field>
+            <field name="speed_3">359</field>
+            <field name="DIRECTION_4">cw</field>
+            <field name="speed_4">0</field>
+          </block>
+        </statement>
+        <value name="IF1">
+          <block type="cb1_get_sensor_update" id="ZmiY!X%Sk*CPp28Q2]Jb">
+            <field name="sensor_name">btn1</field>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="cb1_set_all_motors_picker" id="W8zlHuE+N*kv7Si(?(eG">
+            <field name="DIRECTION_1">ccw</field>
+            <field name="speed_1">359</field>
+            <field name="DIRECTION_2">ccw</field>
+            <field name="speed_2">359</field>
+            <field name="DIRECTION_3">cw</field>
+            <field name="speed_3">359</field>
+            <field name="DIRECTION_4">ccw</field>
+            <field name="speed_4">0</field>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="cb1_set_all_motors_picker" id="GZvQ6]OSBS-D9G)`c`58">
+            <field name="DIRECTION_1">cw</field>
+            <field name="speed_1">0</field>
+            <field name="DIRECTION_2">cw</field>
+            <field name="speed_2">0</field>
+            <field name="DIRECTION_3">cw</field>
+            <field name="speed_3">0</field>
+            <field name="DIRECTION_4">cw</field>
+            <field name="speed_4">0</field>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>
